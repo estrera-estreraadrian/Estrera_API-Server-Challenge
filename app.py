@@ -1,6 +1,6 @@
 from flask import Flask, request
 import sqlite3
-
+import os
 app = Flask(__name__)
 
 
@@ -195,4 +195,4 @@ def delete_game(game_id):
 if __name__ == "__main__":
     init_db()
     seed_games()
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
