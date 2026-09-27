@@ -173,4 +173,14 @@ POST and PUT requests require the following fields:
 - platform
 - release_year
 
-If any required field is missing the API returns a 400 Bad Request response with an error message.
+If any required field is missing the API returns a 400 Bad Request response with an error message.  
+
+## The Live API
+
+The API is deployed on Render and can be accessed here:
+
+https://estrera-api-server-challenge.onrender.com
+
+Example endpoint:
+
+https://estrera-api-server-challenge.onrender.com/games
