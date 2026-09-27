@@ -56,6 +56,9 @@ def seed_games():
     conn.commit()
     conn.close()
 
+@app.route("/")
+def home():
+    return {"message": "Video Games REST API is running!"}, 200
 
 @app.route("/games", methods=["GET"])
 def get_games():
