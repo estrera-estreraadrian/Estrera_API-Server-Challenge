@@ -192,6 +192,7 @@ def delete_game(game_id):
 
     return {"message": "Game deleted successfully"}, 200
 
+
 if __name__ == "__main__":
     init_db()
     seed_games()
